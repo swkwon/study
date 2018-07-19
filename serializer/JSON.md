@@ -10,6 +10,7 @@ object는 name/value 쌍들의 비순서화된 SET이다. object는 `{`(좌 중�
 
 ## array 형식
 array는 값들의 순서화된 collection 이다. array는 `[`(좌 bracket)로 시작해서 `]`(우 bracket)로 끝내어 표현한다. `,`(comma)로 array의 값들을 구분한다.
+
 ![array 형식](images/array.gif)
 
 ## name
