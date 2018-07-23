@@ -1,26 +1,40 @@
-# 개요
-FlatBuffers는 플랫폼 종속성 없이 사용가능한 직렬화 라이브러리 입니다. 
+# FlatBuffers
 
-메모리 제약이 큰 모바일 하드웨어나 성능요구 사항이 가장 높은 게임같은 응용프로그램에 중점을 두고 있습니다.
+## 1. 개요
 
-# why
+FlatBuffers는 플랫폼 종속성 없이 사용가능한 직렬화 라이브러리 입니다. 메모리 제약이 큰 모바일 하드웨어나 성능요구 사항이 가장 높은 게임같은 응용프로그램에 중점을 두고 있습니다.
+
+---
+
+## 2. 장점
+
 FlatBuffers를 쓰는 이유는?
+
 1. runtime에 serialize, deserialize가 필요 없습니다.
 2. 메모리 효율성이 높고, 빠른 속도를 보장합니다.
 3. 크로스 플랫폼, 종속성 없이 사용 가능 합니다.
 4. C, C++, Go, Java, C#, JavaScript, TypeScript, PHP, Python, Dart gRPC등에서 사용할 수 있습니다.
 5. 필요하다면 schema-less 하게 사용할 수 있습니다.
 
-# release
+---
+
+## 3. release
+
 [여기](https://github.com/google/flatbuffers/releases)서 FlatBuffers release 버전을 다운 받을 수 있습니다.
 
-# Tutorial
+---
+
+## 4. Tutorial
+
 1. FlatBuffers `schema` 파일을 작성합니다. (.fbs)
 2. FlatBuffers의 컴파일러 flatc.exe 를 사용합니다.
 3. 스키마를 준수하는 JSON파일을 FlatBuffers 바이너리 파일로 구문분석 합니다.
 4. 필요한 언어에 맞게 생성된 파일을 사용합니다.
 
-## Schema 예제
+---
+
+## 5. Schema 예제
+
 ```flatbuffers
 // Example IDL file for our monster's schema.
 namespace MyGame.Sample;
@@ -49,7 +63,8 @@ table Weapon {
 }
 root_type Monster;
 ```
-스키마는 C언어와 유사합니다. 스키마의 시작은 `namespace`를 선언하는 것입니다. 
+
+스키마는 C언어와 유사합니다. 스키마의 시작은 `namespace`를 선언하는 것입니다.
 
 그 다음에 `enum` 정의가 있습니다. 예제에서는 enum의 타입이 byte이며 이름은 Color 입니다.
 Red는 0, Blue는 2 라고 명시적으로 작성되었습니다. Green은 암시적으로 Red보다 하나 큰 1이 됩니다.
@@ -58,37 +73,49 @@ Red는 0, Blue는 2 라고 명시적으로 작성되었습니다. Green은 암�
 
 그 다음은 `struct Vec3` 입니다. `struct Vec3`는 3차원 벡터값을 표현합니다. 여기서 table을 사용하지 않고 struct를 사용한 이유는 변경되지 않는 데이터 구조를 표현하기에는 struct가 적합하기 때문입니다. 왜냐면 메모리를 더 적게 사용하고 더 빠른 검색이 가능하기 때문입니다.
 
-`Monster` table은 이 예제에서 중요한 object입니다. `mana:short = 150;`은 mana라는 변수는 type이 short이며 default값으로 150이 됩니다. 명시되지 않은 모든 필드는 0이거나 null 이 됩니다. 
-`friendly:bool = false (deprecated);`를 보면 friendly 필드가 deprecated가 된 것을 볼 수 있습니다. 하위호환을 위해 필드를 삭제하는 것은 위험합니다. 
+`Monster` table은 이 예제에서 중요한 object입니다. `mana:short = 150;`은 mana라는 변수는 type이 short이며 default값으로 150이 됩니다. 명시되지 않은 모든 필드는 0이거나 null 이 됩니다.
+`friendly:bool = false (deprecated);`를 보면 friendly 필드가 deprecated가 된 것을 볼 수 있습니다. 하위호환을 위해 필드를 삭제하는 것은 위험합니다.
 
-`Weapon` table은 sub-table입니다. 이 예제에서는 `Monster` table과 `Equipment` enum 에서 사용합니다. 
+`Weapon` table은 sub-table입니다. 이 예제에서는 `Monster` table과 `Equipment` enum 에서 사용합니다.
 
-마지막에는 `root_type`이 있습니다. `root_type`은 직렬화 되는 최상위 table이 됩니다. 
+마지막에는 `root_type`이 있습니다. `root_type`은 직렬화 되는 최상위 table이 됩니다.
 
 스키마에서는 short과 float을 사용했는데 short대신 int16, float대신 float32를 사용할 수 있습니다.
 
-## Type
+---
+
+## 6. Type
+
 * 8 bit : byte(int8), ubyte(uint8), bool
 * 16 bit: short(int16), ushort(uint16)
 * 32 bit: int(int32), uint(uint32), float(float32)
 * 64 bit: long(int64), ulong(uint64), double(float64)
 
-## 스키마 컴파일
+---
+
+## 7. 스키마 컴파일
+
 flatc를 이용해 fbs를 컴파일 합니다.
+
 ```bash
-$ flatc --go .\monster.fbs
+shell> flatc --go .\monster.fbs
 ```
 
-현재 폴더에 monster.fbs를 컴파일하고 생성된 파일도 현재폴더 밑에 생성됩니다. 
+현재 폴더에 monster.fbs를 컴파일하고 생성된 파일도 현재폴더 밑에 생성됩니다.
 
-## 소스에서 사용하기
+---
+
+## 8. 소스에서 사용하기
+
 생성된 fbs 소스와 FlatBuffers 라이브러리를 import합니다.
+
 ```go
 import (
     flatbuffers "github.com/google/flatbuffers/go"
     sample "MyGame/Sample"
 )
 ```
+
 buffer size가 1024 Byte인 buffer를 생성합니다.
 
 ```go
@@ -113,6 +140,7 @@ axe := sample.WeaponEnd(builder)
 ```
 
 이제 Monster를 생성해보겠습니다.
+
 ```go
 // 몬스터 이름 Orc 직렬화
 name := builder.CreateString("Orc")
@@ -126,6 +154,7 @@ inv := builder.EndVector(10)
 ```
 
 weapons vector에 weapon을 추가 합니다.
+
 ```go
 sample.MonsterStartWeaponsVector(builder, 2)
 builder.PrependUOffsetT(axe)
@@ -133,7 +162,8 @@ builder.PrependUOffsetT(sword)
 weapons := builder.EndVector(2)
 ```
 
-이제 직렬화되는 몬스터 오브젝트를 만들 수 있습니다. 
+이제 직렬화되는 몬스터 오브젝트를 만들 수 있습니다.
+
 ```go
 sample.MonsterStart(builder)
 sample.MonsterAddPos(builder, sample.CreateVec3(builder, 1.0, 2.0, 3.0))
@@ -149,18 +179,23 @@ orc := sample.MonsterEnd(builder)
 ```
 
 buffer가 완성되면 finish 메소드를 호출해서 완료 해주어야 합니다.
+
 ```go
 // Call `Finish()` to instruct the builder that this monster is complete.
 builder.Finish(orc)
 ```
 
 직렬화된 byte 배열을 얻기 위해서는 FinishedBytes() 메소드를 호출합니다.
+
 ```go
 // 이 함수는 Finish() 후에 호출해야 합니다.
 buf := builder.FinishedBytes() // Of type `byte[]`.
 ```
 
-## Byte데이터 읽기
+---
+
+## 9. Byte데이터 읽기
+
 ```go
 var buf []byte = /* 직렬화된 byte 배열 */
 // Get an accessor to the root object inside the buffer.
@@ -168,6 +203,7 @@ monster := sample.GetRootAsMonster(buf, 0)
 ```
 
 아래와 같이 accessor를 통해 buffer 내의 값을 읽을 수 있습니다.
+
 ```go
 hp := monster.Hp()
 mana := monster.Mana()
@@ -199,5 +235,8 @@ if monster.Equipped(unionTable) {
 }
 ```
 
-# 개인적인 소감
+---
+
+## 10. 개인적인 소감
+
 학습비용이 커보인다. Table 구조가 복잡해질 때를 염두해 두어야 할 것 같다.
