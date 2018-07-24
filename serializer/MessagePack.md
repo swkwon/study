@@ -32,7 +32,7 @@ MessagePack은 언어별로 github page가 분산 되어 있습니다. [www.msgp
 ## 5. 단점
 
 1. schema free 구조라 msg 구조에 대해 문서화가 중요합니다.
-2. protobuf 보다는 느립니다.(그러나 메모리 효율은 좋습니다.)
+2. protobuf 보다는 느립니다.
 
 ---
 
