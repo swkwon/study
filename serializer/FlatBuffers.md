@@ -10,7 +10,7 @@ FlatBuffers는 플랫폼 종속성 없이 사용가능한 직렬화 라이브러
 
 FlatBuffers를 쓰는 이유는?
 
-1. runtime에 serialize, deserialize가 필요 없습니다.
+1. serialize, deserialize에 시간 비용이 거의 없습니다.
 2. 메모리 효율성이 높고, 빠른 속도를 보장합니다.
 3. 크로스 플랫폼, 종속성 없이 사용 가능 합니다.
 4. C, C++, Go, Java, C#, JavaScript, TypeScript, PHP, Python, Dart gRPC등에서 사용할 수 있습니다.
@@ -26,7 +26,7 @@ FlatBuffers를 쓰는 이유는?
 
 ## 4. Tutorial
 
-1. FlatBuffers `schema` 파일을 작성합니다. (.fbs)
+1. FlatBuffers `IDL`을 작성합니다. (.fbs)
 2. FlatBuffers의 컴파일러 flatc.exe 를 사용합니다.
 3. 스키마를 준수하는 JSON파일을 FlatBuffers 바이너리 파일로 구문분석 합니다.
 4. 필요한 언어에 맞게 생성된 파일을 사용합니다.
