@@ -16,7 +16,7 @@ FlatBuffers를 쓰는 이유는?
 
 ## 3. release
 
-[여기](https://github.com/google/flatbuffers/releases)서 FlatBuffers release 버전을 다운 받을 수 있습니다.
+[https://github.com/google/flatbuffers/releases](https://github.com/google/flatbuffers/releases)에서 FlatBuffers release 버전을 다운 받을 수 있습니다.
 
 ## 4. Tutorial
 
