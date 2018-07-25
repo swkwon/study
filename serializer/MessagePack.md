@@ -4,19 +4,13 @@
 
 MessagePack은 효율적인 바이너리 직렬화 포맷입니다. JSON과 같이 여러 언어에서 데이터를 교환할 수 있습니다. 그러나 JSON보다 경량화 되어 있고, 더 빠릅니다.
 
----
-
 ## 2. 직렬화된 구조의 예
 
 ![MSGPACK](images/msgpack.jpg)
 
----
-
 ## 3. release
 
 MessagePack은 언어별로 github page가 분산 되어 있습니다. [www.msgpack.org](www.msgpack.org) 에서 언어 메뉴를 클릭하면 API 예제 상단에 라이브러리 링크가 있습니다.
-
----
 
 ## 4. 장점
 
@@ -27,14 +21,10 @@ MessagePack은 언어별로 github page가 분산 되어 있습니다. [www.msgp
 5. 사용하기가 편합니다. (protobuf나 flatbuffers 보다 더)
 6. 약 50여개의 프로그래밍 언어의 라이브러리가 있습니다.(몇몇언어 에서는 JSON과 호환이 쉽다.)
 
----
-
 ## 5. 단점
 
 1. schema free 구조라 msg 구조에 대해 문서화가 중요합니다.
 2. protobuf 보다는 느립니다.
-
----
 
 ## 6. Tutorial
 
@@ -161,8 +151,6 @@ type Option struct {
 
   serialize, _ := msgpack.Marshal(&testInv)
 ```
-
----
 
 ## 7. 소감
 

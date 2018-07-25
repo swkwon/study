@@ -4,21 +4,15 @@
 
 Protocol Buffers (이하 protobuf)는 여러언어를 지원하는 직렬화 라이브러리 입니다. protobuf는 IDL을 작성하여 원하는 언어로 컴파일 하여 사용합니다. 이점은 FlatBuffers와 비슷 합니다.
 
----
-
 ## 2. 장점
 
 1. 여러 언어의 라이브러리가 있습니다.
 2. 빠르고 메모리 효율이 좋습니다.
 3. 사용하기 편합니다.
 
----
-
 ## 3. release
 
 [https://github.com/google/protobuf/releases/](https://github.com/google/protobuf/releases/)에서 릴리즈 버전을 확인 할 수 있습니다.
-
----
 
 ## 4. Tutorial
 
@@ -69,8 +63,6 @@ int main()
 
 역직렬화 하려는 객체 `deserialize`를 선언해줍니다. 그리고 `ParseFromString()` 메소드를 이용하여 parsing 해줍니다. 제대로 parsing이 되면 `name`과 `age`함수 호출로 값을 읽을 수 있습니다.
 
----
-
 ### 4-1 Go에서 사용하기
 
 Go에서 사용하려면 추가적으로 protoc-gen-go와 protobuf lib가 필요합니다. `go get`으로 설치해 줍니다.
@@ -119,15 +111,11 @@ func main() {
 
 위와 같이 객체를 생성해서 Marshal로 직렬화 하고 Unmarshal로 역직렬화 합니다.
 
----
-
 ## 5. 단점
 
 1. IDL 파일을 작성해야 합니다.
 2. proto 파일이 바뀔때마다 빌드해주어야 합니다.
 3. C++의 경우 pb.cc 파일에 descriptor string이 자동생성 되는데 이 string length가 2^16이상이 되면 컴파일 에러가 납니다.(protobuf 2.6, x86 기준)
-
----
 
 ## 6. 소감
 
