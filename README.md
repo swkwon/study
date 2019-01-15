@@ -13,3 +13,9 @@
 5. [YAML](https://github.com/swkwon/study/blob/master/serializer/YAML.md)
 
 ## 3. 처음배우는 머신러닝
+
+### 1. 머신러닝 시작하기
+
+#### 1.1 머신러닝 소개
+
+"데이터를 이용해서 명시적으로 정의되지 않은 패턴을 컴퓨터로 학습하여 결과를 만들어내는 학문 분야"
