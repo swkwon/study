@@ -12,10 +12,4 @@
 4. [Json](https://github.com/swkwon/study/blob/master/serializer/JSON.md)
 5. [YAML](https://github.com/swkwon/study/blob/master/serializer/YAML.md)
 
-## 3. Go
-
-1. 기본 문법
-2. goroutine
-3. 설치 및 기본 설정
-4. 테스트
-5. 벤치마크
+## 3. 처음배우는 머신러닝
