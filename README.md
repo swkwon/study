@@ -14,8 +14,8 @@
 
 ## 3. 처음배우는 머신러닝
 
-1. [머신러닝 시작하기]
-2. 머신러닝의 주요개념
-3. 데이터와 문제
-4. 구매 이력 데이터를 이용한 사용자 그룹 만들기
-5. 문서 분석 시스템 만들기
+1. [머신러닝 시작하기](https://github.com/swkwon/study/blob/master/machinelearning/chapter1.md)
+2. [머신러닝의 주요개념](https://github.com/swkwon/study/blob/master/machinelearning/chapter2.md)
+3. [데이터와 문제](https://github.com/swkwon/study/blob/master/machinelearning/chapter3.md)
+4. [구매 이력 데이터를 이용한 사용자 그룹 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter4.md)
+5. [문서 분석 시스템 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter5.md)
