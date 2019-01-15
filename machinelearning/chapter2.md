@@ -47,4 +47,4 @@
 
 > 수식:
 >
-> $$y = w_0 + w_1x_1 + w_2x_2 + ...$$
+> y = w<sub>0</sub> + w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + ...
