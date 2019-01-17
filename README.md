@@ -19,3 +19,9 @@
 3. [데이터와 문제](https://github.com/swkwon/study/blob/master/machinelearning/chapter3.md)
 4. [구매 이력 데이터를 이용한 사용자 그룹 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter4.md)
 5. [문서 분석 시스템 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter5.md)
+
+## 4. 알쏭달쏭 영어
+1. [정규화](https://github.com/swkwon/study/blob/master/english/regularizationvsnormalization.md)
+
+## 4. 수학
+1. [통계의 기초](https://github.com/swkwon/study/blob/master/math/통계의기초.md)
