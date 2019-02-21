@@ -290,3 +290,18 @@ w<sub>0</sub>과 w<sub>1</sub>이 0 일 때 보다 더 작은 값이 나왔습�
 2차 방정식을 따르는 손실함수(loss = (θ-2)<sup>2</sup> + 1)
 
 ![그림](images/pic2_8.jpg)
+
+위 그림에서 θ = 2일때 손실이 최소 입니다.  그러나 이 것처럼 한번에 풀리는 경우는 많지 않고 여러번 반복해서 업데이트를 해야 최솟값을 찾을 수 있습니다. 이 최솟값을 찾을 수 있는 방법이 몇가지 있습니다.
+
+* 경사하강법<sup>gradient descent</sup>
+* 뉴턴/준뉴턴 방법<sup>newton/quasi-newton method</sup>
+* 확률적 경사하강법<sup>stochastic gradient descent</sup>
+* 역전파<sup>backpropagation</sup>
+* 그 외...
+
+### 2.3.1 경사하강법
+
+경사하강법은 간단한 최적화 방법중 하나로 임의의 지점에서 시작하여 더이상 내려갈 수 없을 때까지 반복적으로 내려가 최적화를 수행합니다.
+
+![그림](images/pic2_9.png)
+
