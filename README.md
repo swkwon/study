@@ -23,5 +23,8 @@
 ## 4. 알쏭달쏭 영어
 1. [정규화](https://github.com/swkwon/study/blob/master/english/regularizationvsnormalization.md)
 
-## 4. 수학
+## 5. 수학
 1. [통계의 기초](https://github.com/swkwon/study/blob/master/math/통계의기초.md)
+
+## 6. docker
+1.  [AMI 에서 redis 시작](https://github.com/swkwon/study/blob/master/docker/aws%EC%97%90%EC%84%9C%EC%8B%9C%EC%9E%91.md)
