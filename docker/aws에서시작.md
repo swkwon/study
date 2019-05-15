@@ -43,7 +43,7 @@ $ sudo docker run --name dev-redis -d -p 8000:6379 -v /host/data/directory:/data
 
 `-p 8000:6379` : host 8000 포트로 접근하는 연결을 컨테이너 6379 포트로 연결해줍니다.
 
-`-v /host/data/directory:/data` : 컨테이너 /data 디렉토리를 host /host/data/directory 디렉토리에 연결합니다. 컨테이너가 삭제되어도 redis 데이터는 EC2의 /host/data/directory 디렉토리에 있습니다. 이제 컨테이너가 없어져도 걱정없습니다.
+`-v /host/data/directory:/data` : 컨테이너 /data 디렉토리를 host /host/data/directory 디렉토리에 연결합니다. docker hub에서 다운로드한 redis image는 데이터베이스를 /data에 저장하도록 되어 있습니다. 컨테이너가 삭제되어도 redis 데이터는 EC2의 /host/data/directory 디렉토리에 있습니다. 이제 컨테이너가 없어져도 걱정없습니다.
 
 `--restart unless-stopped` : 컨테이너 재시작 옵션입니다. 컨테이너가 시작하는 정책은 4가지가 있습니다.
 
