@@ -17,7 +17,7 @@ $ sudo yum install -y docker
 
 `-y` 옵션은 무언가 물어볼 때 yes를 자동으로 선택합니다.
 
-## 3. docker 컨테이너 시작
+## 3. docker 서비스 시작
 
 ```
 $ sudo service docker start
