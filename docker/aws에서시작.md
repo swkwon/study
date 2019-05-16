@@ -1,4 +1,4 @@
-# AWS EC2에서 redis 시작
+# AWS EC2에서 docker를 이용해 redis 시작
 
 ## 1. EC2 생성하기
 

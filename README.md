@@ -28,4 +28,4 @@
 
 ## 6. docker
 1. [docker 기본 명령어](https://github.com/swkwon/study/blob/master/docker/docker%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4.md)
-2. [AMI 에서 redis 시작](https://github.com/swkwon/study/blob/master/docker/aws%EC%97%90%EC%84%9C%EC%8B%9C%EC%9E%91.md)
+2. [AMI 에서 docker를 이용해 redis 시작](https://github.com/swkwon/study/blob/master/docker/aws%EC%97%90%EC%84%9C%EC%8B%9C%EC%9E%91.md)
