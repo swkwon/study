@@ -27,6 +27,18 @@ $ sudo chkconfig docker on
 
 위 명령어는 docker를 시작 하는 것이고, 아래 명령어는 EC2인스턴스가 재시작 되었을 때 docker service 를 자동 시작 되도록 설정하는 것입니다.
 
+## sudo 안쓰기
+
+권한 때문에 docker 명령어를 사용할 때마다 sudo를 써야 합니다. 그러나 해당 user을 docker 그룹에 추가하면 sudo를 안써도 됩니다.
+
+```
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+$ sudo service docker restart
+```
+
+위의 명령어처럼 docker 그룹에 user을 추가하고 docker 서비스를 재시작 하면 sudo 없이 docker 명령어를 실행할 수 있습니다.
+
 ## redis 시작
 
 redis image를 다운로드합니다.
