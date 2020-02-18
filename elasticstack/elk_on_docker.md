@@ -34,10 +34,10 @@ http://localhost:9200
 Production mode
 * [참고](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html)
 
-## kinaba 설치하기
+## kibana 설치하기
 
 ```
-$ docker pull kinaba:7.6.0
+$ docker pull kibana:7.6.0
 ```
 
 아래 실행은 기본 설정으로 `http://localhost:9200 #elasticsearch 기본 위치`에 자동으로 연결한다.
