@@ -111,7 +111,7 @@ tcp port 9900으로 부터 메시지를 받아서 elasticsearch와 stdout으로 
 conf파일을 연결하여 재실행해보자. 위와 같이이 설정을 파일에 저장한다.
 
 ```
-$ docker --rm -it -v c:\logstash:/usr/share/logstash/pipeline -p 9900:9900 --network elknet --name logstash logstash:7.6.0
+$ docker run --rm -it -v c:\logstash:/usr/share/logstash/pipeline -p 9900:9900 --network elknet --name logstash logstash:7.6.0
 ```
 
 -it 옵션으로 stdin, stdout을 실행할 수 있다.
