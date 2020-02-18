@@ -122,7 +122,7 @@ netcat같은 도구를 이용하여 9900 port로 메시지를 보내보자.
 echo "hello world" | nc localhost 9900
 ```
 
-kibana에서 조회 하니 아래와 같은 document가 들어와 있따.
+kibana에서 조회 하니 아래와 같은 document가 있다.
 
 ```
 {
