@@ -234,3 +234,5 @@ codec은 input data를 위해 사용한다. 입력 codec은 logstash 파이프�
 ### Microseconds
 
 `us`, `usec`, `usecs`를 사용한다. e.g. `"600 us"`, `"800 usec"`, `"900 usecs"`
+
+* [출처: 엘라스틱 사이트](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-file.html#plugins-inputs-file-stat_interval)
