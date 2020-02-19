@@ -5,3 +5,4 @@
 * [Logstash input plugin](./logstash_setting.md)
   * [Common option](./common_option.md)
   * [File input plugin](./logstash_input_plugin_file.md)
+  * [Beats input plugin](./logstash_input_plugin_beats.md)

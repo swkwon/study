@@ -3,7 +3,7 @@
 logstash는 많은 input plugin을 지원한다.
 
 * azure_event_hubs
-* beats
+* [beats](./logstash_input_plugin_beats.md)
 * cloudwatch
 * couchdb_changes
 * dead_letter_queue
