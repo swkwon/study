@@ -1,5 +1,8 @@
 # Logstash Input Plugin
 
+많은 input plugin이 있는데 모든 plugin이 공통적으로 사용하는 option이 있다.
+* [common option](./common_option.md)
+
 logstash는 많은 input plugin을 지원한다.
 
 * azure_event_hubs
