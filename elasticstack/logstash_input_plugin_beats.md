@@ -26,13 +26,18 @@ output {
 ```
 Note
 
-만약 ILM(Information Lifecycle Management)가 지정되지 않으면 logstash가 매일 `{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}` 형식으로 @timestamp 정보를 이용하여 인덱스를 만든다.
+만약 ILM(Information Lifecycle Management)가 지정되지 않으면
+logstash가 매일 `{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}`
+형식으로 @timestamp 정보를 이용하여 인덱스를 만든다.
 ```
 
 ```
 Important
 
-여러줄에 걸친 이벤트를 제공하는 경우 이벤트 데이터를 logstash에 보내기 전에 Filebeat에서 사용가능한 구성 옵션을 사용하여 여러줄 이베트를 처리해야 한다. multiline codec plugin을 이용하여 multilne event를 처리할 수 없다. 그렇게 하면 logstash를 시작하지 못할 수 있다.
+여러줄에 걸친 이벤트를 제공하는 경우 이벤트 데이터를 logstash에 보내기 전에 
+Filebeat에서 사용가능한 구성 옵션을 사용하여 여러줄 이벤트를 처리해야 한다. 
+multiline codec plugin을 이용하여 multilne event를 처리할 수 없다. 
+그렇게 하면 logstash를 시작하지 못할 수 있다.
 ```
 
 ## 버전화된 Beats 인덱스들
