@@ -35,6 +35,23 @@
 
 1. [GCP VM인스턴스에 putty로 접속하기](GCP/GCP_putty_connect.md)
 
+## 리눅스
+
+1. [리눅스 export](linux/export.md)
+1. [crontab 사용하기](linux/crontab.md)
+
+## 윈도우즈
+
+1. [cmd에서 text검색](windows/find_text.md)
+
+## git
+
+1. [git remote 저장소와 로컬 저장소 연결하기](git/remote_add.md)
+
+## nginx
+
+1. [permission error](nginx/permission_error.md)
+
 ## 알쏭달쏭 영어
 
 1. [정규화](english/regularizationvsnormalization.md)
