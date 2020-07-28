@@ -7,34 +7,34 @@
 ## Serialization Libs
 
 1. [FlatBuffers](serializer/FlatBuffers.md)
-1. [Protocol Buffers](https://github.com/swkwon/study/blob/master/serializer/ProtocolBuffers.md)
-1. [MessagePack](https://github.com/swkwon/study/blob/master/serializer/MessagePack.md)
-1. [Json](https://github.com/swkwon/study/blob/master/serializer/JSON.md)
-1. [YAML](https://github.com/swkwon/study/blob/master/serializer/YAML.md)
+1. [Protocol Buffers](serializer/ProtocolBuffers.md)
+1. [MessagePack](serializer/MessagePack.md)
+1. [Json](serializer/JSON.md)
+1. [YAML](serializer/YAML.md)
 
 ## 처음배우는 머신러닝
 
-1. [머신러닝 시작하기](https://github.com/swkwon/study/blob/master/machinelearning/chapter1.md)
-1. [머신러닝의 주요개념](https://github.com/swkwon/study/blob/master/machinelearning/chapter2.md)
-1. [데이터와 문제](https://github.com/swkwon/study/blob/master/machinelearning/chapter3.md)
-1. [구매 이력 데이터를 이용한 사용자 그룹 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter4.md)
-1. [문서 분석 시스템 만들기](https://github.com/swkwon/study/blob/master/machinelearning/chapter5.md)
+1. [머신러닝 시작하기](machinelearning/chapter1.md)
+1. [머신러닝의 주요개념](machinelearning/chapter2.md)
+1. [데이터와 문제](machinelearning/chapter3.md)
+1. [구매 이력 데이터를 이용한 사용자 그룹 만들기](machinelearning/chapter4.md)
+1. [문서 분석 시스템 만들기](machinelearning/chapter5.md)
 
 
 ## 수학
 
-1. [통계의 기초](https://github.com/swkwon/study/blob/master/math/통계의기초.md)
+1. [통계의 기초](math/통계의기초.md)
 
 ## docker
 
-1. [docker 기본 명령어](https://github.com/swkwon/study/blob/master/docker/docker%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4.md)
-1. [AMI 에서 docker를 이용해 redis 시작](https://github.com/swkwon/study/blob/master/docker/aws%EC%97%90%EC%84%9C%EC%8B%9C%EC%9E%91.md)
-1. [docker registry](https://github.com/swkwon/study/blob/master/docker/docker_registry.md)
+1. [docker 기본 명령어](docker/docker_basic.md)
+1. [AMI 에서 docker를 이용해 redis 시작](docker/start_on_aws.md)
+1. [docker registry](docker/docker_registry.md)
 
 ## GCP
 
-1. [GCP VM인스턴스에 putty로 접속하기](https://github.com/swkwon/study/blob/master/GCP/GCP_putty_connect.md)
+1. [GCP VM인스턴스에 putty로 접속하기](GCP/GCP_putty_connect.md)
 
 ## 알쏭달쏭 영어
 
-1. [정규화](https://github.com/swkwon/study/blob/master/english/regularizationvsnormalization.md)
+1. [정규화](english/regularizationvsnormalization.md)
