@@ -1,0 +1,23 @@
+version: "3.7"
+
+services: 
+  server:
+    build:
+      context: ./
+      dockerfile: Dockerfile.server
+    image: server:latest
+    expose:
+      - 9000
+    networks:
+      - mynet
+  client:
+    build:
+      context: ./
+      dockerfile: Dockerfile.client
+    image: client:latest
+    networks: 
+      - mynet
+    depends_on: 
+      - server
+networks: 
+  mynet:

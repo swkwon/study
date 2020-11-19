@@ -1,0 +1,4 @@
+FROM alpine:latest
+COPY client /usr/bin
+WORKDIR /usr/bin
+ENTRYPOINT [ "./client" ]
