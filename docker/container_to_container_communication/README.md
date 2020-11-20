@@ -76,3 +76,7 @@ $ docker run -d --name server --network mynet server:latest
 그러나 `docker-compose`로 서비스를 시작할 때는 조금 다르다. name옵션을 굳이 안주어도 service의 이름을 따서 네트워크에 연결된다.
 
 참조 페이지: [docs.docker.com-Networking in Compose](https://docs.docker.com/compose/networking/)
+
+# 주의
+
+`--link` 옵션은 삭제될 수 있으니 사용하지 말자. [링크](https://docs.docker.com/network/links/)
