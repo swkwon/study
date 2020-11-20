@@ -13,7 +13,7 @@ func main() {
 	}
 
 	for {
-		conn.Write([]byte("hello server. I am client."))
+		conn.Write([]byte("hello server."))
 		time.Sleep(1 * time.Second)
 	}
 }

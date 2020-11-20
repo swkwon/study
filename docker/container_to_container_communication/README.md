@@ -56,11 +56,16 @@ $ docker-compose up -d --build
 
 ```
 $ docker-compose logs -f server
-server_1  | 2020/11/19 08:35:09 hello server. I am client.
-server_1  | 2020/11/19 08:35:10 hello server. I am client.
-server_1  | 2020/11/19 08:35:11 hello server. I am client.
-server_1  | 2020/11/19 08:35:12 hello server. I am client.
-server_1  | 2020/11/19 08:35:13 hello server. I am client.
+server_1  | 2020/11/19 08:35:09 hello server.
+server_1  | 2020/11/19 08:35:10 hello server.
+server_1  | 2020/11/19 08:35:11 hello server.
+server_1  | 2020/11/19 08:35:12 hello server.
+server_1  | 2020/11/19 08:35:13 hello server.
 ```
 
 위와 같이 클라이언트로 부터 메시지를 잘 받는 것을 볼 수 있다.
+
+# 주의
+
+지금 여기 docker-compose를 사용하여 서비스를 실행할 경우 client가 server의 host를 service이름으로 찾게 된다.
+그러나 docker-compose를 이용하지 않고 직접 docker run command로 container를 시작할 경우 꼭 컨테이너 이름을 지정해주어야 한다. 그렇지 않으면 client가 server를 못찾는다.
