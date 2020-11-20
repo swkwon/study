@@ -2,7 +2,7 @@
 
 * 컨테이너의 네트워크는 브릿지로 생성된다. 
 * 컨테이너 시작 시 IP는 자동할당된다. 
-* 다른 컨테이너의 IP를 알 수 없으니 hostname으로 접근한다.
+* 다른 컨테이너의 IP를 알 수 없으니 일종의 별명 으로 접근한다.
 * 접속할 컨테이너는 같은 네트워크에 속해야 한다.
 
 # server
@@ -65,7 +65,14 @@ server_1  | 2020/11/19 08:35:13 hello server.
 
 위와 같이 클라이언트로 부터 메시지를 잘 받는 것을 볼 수 있다.
 
-# 주의
+# 컨테이너가 컨테이너를 찾는 과정
 
-지금 여기 docker-compose를 사용하여 서비스를 실행할 경우 client가 server의 host를 service이름으로 찾게 된다.
-그러나 docker-compose를 이용하지 않고 직접 docker run command로 container를 시작할 경우 꼭 컨테이너 이름을 지정해주어야 한다. 그렇지 않으면 client가 server를 못찾는다.
+`docker run` 명령어로 컨테이너를 시작할 경우 client가 server를 `server`라는 이름으로 찾기 위해서는 컨테이너 이름을 `server` 라고 지정해주어야 한다. 아래와 같이 명령어를 입력하면 `mynet`이라는 네티워크에 컨테이너를 시작하면서 `server`라는 이름으로 네트워크에 연결 된다.
+
+```
+$ docker run -d --name server --network mynet server:latest
+```
+
+그러나 `docker-compose`로 서비스를 시작할 때는 조금 다르다. name옵션을 굳이 안주어도 service의 이름을 따서 네트워크에 연결된다.
+
+참조 페이지: [docs.docker.com-Networking in Compose](https://docs.docker.com/compose/networking/)
